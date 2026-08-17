@@ -18,7 +18,7 @@ body{margin:0;min-height:100vh;background:
 h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,6vw,52px);line-height:1.05;margin:0;letter-spacing:-.01em;}
 h1 em{color:var(--gold);font-style:italic;}
 .lead{color:var(--soft);font-size:16px;max-width:60ch;margin:16px 0 40px;line-height:1.5;}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
 a.card{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;
   background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0)),var(--card);
   border:1px solid var(--line);border-radius:18px;padding:26px 24px;transition:transform .14s,border-color .14s;position:relative;overflow:hidden;}
@@ -53,8 +53,15 @@ a.card .go{margin-top:auto;color:var(--gold);font-weight:700;font-size:13.5px;di
     <a class="card" href="./mapa.html">
       <span class="tag">por bairro</span>
       <span class="ic" style="background:rgba(240,136,58,.16);color:#ffab6b">◍</span>
-      <h2>Mapa da Rede</h2>
-      <p>Mapa de Joinville com a rede por bairro. Veja onde cada plano concentra prestadores e qual tem mais rede perto do cliente.</p>
+      <h2>Mapa por Bairro</h2>
+      <p>Satélite de Joinville com a rede por bairro. Veja onde cada plano concentra prestadores e qual tem mais rede em cada região.</p>
+      <span class="go">Abrir mapa →</span>
+    </a>
+    <a class="card" href="./mapa-enderecos.html">
+      <span class="tag">por endereço</span>
+      <span class="ic" style="background:rgba(47,166,196,.16);color:#5fd0e8">📍</span>
+      <h2>Mapa por Endereço</h2>
+      <p>Cada prestador no ponto do endereço, sobre o satélite. Passe o mouse para ver nome, especialidade e planos. Filtre por plano e categoria.</p>
       <span class="go">Abrir mapa →</span>
     </a>
   </div>
