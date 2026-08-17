@@ -1,0 +1,70 @@
+<title>Rede Joinville — Corretores</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --bg:#0e1116; --ink:#eef2f8; --soft:#aab4c4; --muted:#7a8598;
+  --gold:#c7a24c; --line:#242c38; --card:#161b23;
+  --brad:#e0455f; --amil:#5b62e8; --hap:#2fa6c4; --ns:#f0883a;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --serif:Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:
+  radial-gradient(1200px 600px at 70% -10%, #17324e 0%, transparent 60%),
+  var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;}
+.wrap{max-width:960px;margin:0 auto;padding:56px 22px 60px;}
+.eyebrow{color:var(--gold);font-weight:800;letter-spacing:.18em;font-size:12px;text-transform:uppercase;}
+.bar{width:60px;height:2px;background:var(--gold);margin:12px 0 22px;}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,6vw,52px);line-height:1.05;margin:0;letter-spacing:-.01em;}
+h1 em{color:var(--gold);font-style:italic;}
+.lead{color:var(--soft);font-size:16px;max-width:60ch;margin:16px 0 40px;line-height:1.5;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+a.card{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;
+  background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0)),var(--card);
+  border:1px solid var(--line);border-radius:18px;padding:26px 24px;transition:transform .14s,border-color .14s;position:relative;overflow:hidden;}
+a.card:hover{transform:translateY(-4px);border-color:#3a4658;}
+a.card .ic{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;}
+a.card h2{font-family:var(--serif);font-size:23px;margin:6px 0 0;font-weight:700;}
+a.card p{color:var(--soft);font-size:14px;line-height:1.5;margin:0;}
+a.card .go{margin-top:auto;color:var(--gold);font-weight:700;font-size:13.5px;display:inline-flex;align-items:center;gap:6px;}
+.tag{position:absolute;top:18px;right:20px;font-size:11px;font-weight:800;color:var(--muted);letter-spacing:.08em;}
+.ops{display:flex;gap:8px;margin-top:34px;flex-wrap:wrap;}
+.op{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--soft);font-weight:600;
+  border:1px solid var(--line);border-radius:999px;padding:6px 12px;}
+.op .d{width:9px;height:9px;border-radius:50%;}
+.foot{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.foot b{color:var(--gold);font-family:var(--serif);font-size:15px;font-weight:700;}
+@media(max-width:640px){.cards{grid-template-columns:1fr;}}
+</style>
+<div class="wrap">
+  <div class="eyebrow">Uso interno · Corretores</div>
+  <div class="bar"></div>
+  <h1>Rede Credenciada<br><em>Joinville &amp; Região</em></h1>
+  <p class="lead">Central de consulta da rede dos planos que trabalhamos — Bradesco, Amil, Hapvida e Nossa Saúde. Escolha uma ferramenta abaixo.</p>
+
+  <div class="cards">
+    <a class="card" href="./comparativo.html">
+      <span class="tag">228 prestadores</span>
+      <span class="ic" style="background:rgba(91,98,232,.16);color:#8b90ff">▦</span>
+      <h2>Comparativo de Rede</h2>
+      <p>Todos os prestadores lado a lado nos 5 planos, com especialidade. Busque, filtre por plano ou categoria e veja exclusivos e coringas.</p>
+      <span class="go">Abrir comparativo →</span>
+    </a>
+    <a class="card" href="./mapa.html">
+      <span class="tag">por bairro</span>
+      <span class="ic" style="background:rgba(240,136,58,.16);color:#ffab6b">◍</span>
+      <h2>Mapa da Rede</h2>
+      <p>Mapa de Joinville com a rede por bairro. Veja onde cada plano concentra prestadores e qual tem mais rede perto do cliente.</p>
+      <span class="go">Abrir mapa →</span>
+    </a>
+  </div>
+
+  <div class="ops">
+    <span class="op"><span class="d" style="background:var(--brad)"></span>Bradesco</span>
+    <span class="op"><span class="d" style="background:var(--amil)"></span>Amil</span>
+    <span class="op"><span class="d" style="background:var(--hap)"></span>Hapvida</span>
+    <span class="op"><span class="d" style="background:var(--ns)"></span>Nossa Saúde</span>
+  </div>
+
+  <div class="foot"><b>Mazza Broker</b><span>Rede sujeita a alterações — confirme no portal da operadora.</span></div>
+</div>
